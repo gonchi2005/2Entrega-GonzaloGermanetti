@@ -1,0 +1,583 @@
+/*colores
+cascara de huevo: #F0EBD8
+beige: #EBEBD3
+blanco holandes: #D8CFAF
+deldgraw: #4C5B5C
+chorro: #323031 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+
+
+/*main*/
+/*GRID CONTENEDOR*/
+/*pantalla mas grande que desktop*/
+@media (min-width: 1024px) {
+    /*header*/
+.menu-principal {
+    display: grid;
+}
+
+    /*main*/
+    .grid-contenido {
+        background-color: #EBEBD3 ;
+        display: grid;
+        grid-template-areas:
+        "g1 g1" 
+        "g2 g3"
+    }
+    .g1 {
+        grid-area: g1;
+    }
+    .carrusel {
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+    .carrusel img {
+        width: 0%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .5s ease;
+    }
+    .carrusel img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 3;
+        filter: brightness(120%);
+    }
+    .g2 {
+        grid-area: g2;
+    }
+    .instagram h2 {
+        font-size: 25px;
+        color: #4C5B5C;
+        text-align: center;
+    }
+    .instagram button a {
+        font-size: 35px;
+        text-decoration: none;
+        color: #4C5B5C;
+    }
+    .g3 {
+        grid-area: g3;
+    }
+    .cont-instagram {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boton-instagram {
+        width: 160px;
+        height: 60px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #4C5B5C;
+        background-color: #EBEBD3;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba (#F0EBD8);
+        transition: all 0,3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+    .boton-instagram:hover {
+        background-color: #4C5B5C;
+        box-shadow: 0px 15px 20px rgba(#F0EBD8);
+        color: #4C5B5C;
+        transform: translateY(-7px);
+    }
+    .boton-instagram a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+
+
+    /*section*/
+.grid-contenido2 {
+    background-color: #D8CFAF;
+    display: grid;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a3"
+    "a4 a5";
+    gap: 10px;
+}
+.img {
+    width: 350px;
+    height: 300px;
+}
+.a1 {
+    text-align: center;
+    grid-area: a1;
+    font-size: 25px;
+    color: #4C5B5C;
+}
+.a2 {
+    grid-area: a2;
+}
+.a3 {
+    grid-area: a3;
+}
+.a4 {
+    grid-area: a4;
+}
+.a5 {
+    grid-area: a5;
+}
+
+
+
+
+/*Footer*/
+.grid-pie {
+    background-color: #EBEBD3;
+    display: grid;
+    grid-template-areas: 
+    "g1 g2";
+}
+.grid-pie h2 {
+    font-size: 40px;
+    color: #4C5B5C;
+    text-align: center;
+    display: grid;
+}
+.g1 {
+    grid-area: g1;
+}
+.g2 {
+    grid-area: g2;
+}
+.pie-final p {
+    font-size: 25px;
+    color: #4C5B5C;
+    text-align: start;
+}
+}
+/*pantalla de tablet normal*/
+@media (min-width: 769px) and (max-width: 1023px) {
+    /*header*/
+    .menu-principal {
+    display: grid;
+    }
+
+    /*main*/
+    .grid-contenido {
+        background-color: #EBEBD3 ;
+        display: grid;
+        grid-template-areas:
+        "g1" 
+        "g2"
+        "g3"
+    }
+    .g1 {
+        grid-area: g1;
+    }
+    .carrusel {
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+    .carrusel img {
+        width: 0%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .5s ease;
+    }
+    .carrusel img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 3;
+        filter: brightness(120%);
+    }
+    .g2 {
+        grid-area: g2;
+    }
+    .instagram h2 {
+        font-size: 40px;
+        color: #4C5B5C;
+        text-align: center;
+    }
+    .instagram button a {
+        font-size: 35px;
+        text-decoration: none;
+        color: #4C5B5C;
+    }
+    .g3 {
+        grid-area: g3;
+    }
+    .cont-instagram {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .boton-instagram {
+        width: 160px;
+        height: 60px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #4C5B5C;
+        background-color: #EBEBD3;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba (#F0EBD8);
+        transition: all 0,3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+    .boton-instagram:hover {
+        background-color: #4C5B5C;
+        box-shadow: 0px 15px 20px rgba(#F0EBD8);
+        color: #4C5B5C;
+        transform: translateY(-7px);
+    }
+    .boton-instagram a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+
+
+    /*section*/
+.grid-contenido2 {
+    background-color: #D8CFAF;
+    display: grid;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a3"
+    "a4 a5";
+    gap: 10px;
+}
+.img {
+    width: 250px;
+    height: 150px;
+}
+.a1 {
+    text-align: center;
+    grid-area: a1;
+    font-size: 50px;
+    color: #4C5B5C;
+}
+.a2 {
+    grid-area: a2;
+}
+.a3 {
+    grid-area: a3;
+}
+.a4 {
+    grid-area: a4;
+}
+.a5 {
+    grid-area: a5;
+}
+
+
+
+
+/*Footer*/
+.grid-pie {
+    background-color: #EBEBD3;
+    display: grid;
+    grid-template-areas: 
+    "g1 g2";
+}
+.grid-pie h2 {
+    font-size: 40px;
+    color: #4C5B5C;
+    text-align: center;
+    display: grid;
+}
+.g1 {
+    grid-area: g1;
+}
+.g2 {
+    grid-area: g2;
+}
+.pie-final p {
+    font-size: 25px;
+    color: #4C5B5C;
+    text-align: start;
+}
+}
+/*pantallas pequeñas*/
+@media (min-width: 320px) and (max-width: 768px) {
+    /*header*/
+    .menu-principal {
+    display: grid;
+    }
+
+    /*main*/
+    .grid-contenido {
+        background-color: #EBEBD3 ;
+        display: grid;
+        grid-template-areas:
+        "g1" 
+        "g2"
+        "g3"
+    }
+    .g1 {
+        grid-area: g1;
+    }
+    .carrusel {
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+    .carrusel img {
+        width: 0%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .5s ease;
+    }
+    .carrusel img:hover {
+        cursor: crosshair;
+        width: 300px;
+        opacity: 3;
+        filter: brightness(120%);
+    }
+    .g2 {
+        grid-area: g2;
+    }
+    .instagram h2 {
+        font-size: 40px;
+        color: #4C5B5C;
+        text-align: start;
+    }
+    .instagram button a {
+        font-size: 35px;
+        text-decoration: none;
+        color: #4C5B5C;
+    }
+    .g3 {
+        grid-area: g3;
+    }
+    .cont-instagram {
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    .boton-instagram {
+        width: 160px;
+        height: 60px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #4C5B5C;
+        background-color: #EBEBD3;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba (#F0EBD8);
+        transition: all 0,3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+    .boton-instagram:hover {
+        background-color: #4C5B5C;
+        box-shadow: 0px 15px 20px rgba(#F0EBD8);
+        color: #4C5B5C;
+        transform: translateY(-7px);
+    }
+    .boton-instagram a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+
+
+    /*section*/
+.grid-contenido2 {
+    background-color: #D8CFAF;
+    display: grid;
+    grid-template-areas: 
+    "a1"
+    "a2"
+    "a3"
+    "a4"
+    "a5";
+    gap: 10px;
+}
+.img {
+    width: 500px;
+    height: 400px;
+}
+.a1 {
+    text-align: start;
+    grid-area: a1;
+    font-size: 50px;
+    color: #4C5B5C;
+}
+.a2 {
+    grid-area: a2;
+}
+.a3 {
+    grid-area: a3;
+}
+.a4 {
+    grid-area: a4;
+}
+.a5 {
+    grid-area: a5;
+}
+
+
+
+
+/*Footer*/
+.grid-pie {
+    background-color: #EBEBD3;
+    display: grid;
+    grid-template-areas: 
+    "g1"
+    "g2"
+}
+.grid-pie h2 {
+    font-size: 40px;
+    color: #4C5B5C;
+    text-align: start;
+    display: grid;
+}
+.g1 {
+    grid-area: g1;
+}
+.g2 {
+    grid-area: g2;
+}
+.pie-final p {
+    font-size: 25px;
+    color: #4C5B5C;
+    text-align: start;
+}
+
+}
+
+
+
+
+/*PAGINA CONTACTO*/
+/*header*/
+.menu-principal {
+    background-color: #F0EBD8;
+}
+
+.cont-contacto {
+    background-image: url(../assets/espejo-asimetrico-para-salon-color-marron.jpg) ;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-contacto h1 {
+    font-size: 100px;
+    color: #323031;
+}
+.cont-formulario {
+    background-color: #F0EBD8;
+}
+/*main*/
+
+.contenido-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D8CFAF;
+}
+
+.navbar {
+    background-color: #EBEBD3;
+    padding: 50px 60px;
+    border-radius: 10px;
+}
+
+.cont-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cont-formulario label {
+    font-size: 25px;
+    color: #4C5B5C;
+    text-align: center;
+}
+
+.cont-formulario input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 3px solid #EBEBD3;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.cont-formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.cont-formulario input[type="submit"] {
+    background-color: #4C5B5C;
+    border: none;
+    padding: 15px 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*footer*/
+.pie-contacto {
+    background-color: #EBEBD3;
+    display: flex;
+    padding: 50px 25px;
+}
+.contenido-pie {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: row;
+    max-width: 100%;
+    margin: 15px;
+}
+.contenido-pie ul {
+    list-style: none;
+    display: flex;
+    gap: 900px;
+}
+
+.contenido-pie li {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-pie h2 {
+    font-size: 50px;
+    color: #4C5B5C;
+}
+.contenido-pie a {
+    color: #4C5B5C;
+    text-decoration: none;
+
+    font-size: 25px;
+}
+
+.contenido-pie a:hover {
+    color: #f9c80e;
+}
+
+.contenido-pie p {
+    font-size: 25px;
+}
